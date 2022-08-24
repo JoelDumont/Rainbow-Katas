@@ -13,3 +13,8 @@ Wozu:
 Learnings:
 - Neue Ideen zwischen Runden besprechen
 - Keinen neuen Hinweise sondern nur den Driver bei seiner Idee unterstützen
+
+Next Steps:
+- Refactoring (Listen statt arrays, primitive values wenn möglich, remove code duplicates)
+- weitere Ideen
+- letzter Test um Files lesen zu verknüpfen

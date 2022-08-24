@@ -37,9 +37,29 @@ public class Sonar {
         }
     }
 
-    public boolean compareLines(String s1, String s2) {
-        final int i1 = Integer.parseInt(s1);
-        final int i2 = Integer.parseInt(s2);
-        return Integer.compare(i1, i2) < 0;
+    public int countNrOfIncreases(final String... strings) {
+        Integer[] ints = new Integer[strings.length];
+        for (int i = 0; i < strings.length; i += 1) {
+            ints[i] = Integer.parseInt(strings[i]);
+        }
+        return countNrOfIncreases(ints);
+    }
+
+    public boolean isValueIncreasing(final String s1, final String s2) {
+        return isValueIncreasing(Integer.parseInt(s1), Integer.parseInt(s2));
+    }
+
+    public boolean isValueIncreasing(int i1, int i2) {
+        return i1 < i2;
+    }
+
+    public int countNrOfIncreases(Integer... ints) {
+        int summe = 0;
+        for (int i = 1; i < ints.length; i += 1) {
+            if (isValueIncreasing(ints[i - 1], ints[i])) {
+                summe++;
+            }
+        }
+        return summe;
     }
 }
