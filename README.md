@@ -15,6 +15,9 @@ Learnings:
 - Keinen neuen Hinweise sondern nur den Driver bei seiner Idee unterstützen
 
 Next Steps:
-- Refactoring (Listen statt arrays, primitive values wenn möglich, remove code duplicates)
-- weitere Ideen
-- letzter Test um Files lesen zu verknüpfen
+-- Design Entscheid für Filereader mit Sonar verknüpfen
+- Refactoring
+  -- remove code duplicates (isValueIncreasing private und nur für int)
+  -- Single Responsibility auf Klassenebene, Methodeneben (Sonar umbenennen)
+- letzter Test schreiben (um Files lesen mit dem Increases zählen zu verknüpfen)
+
